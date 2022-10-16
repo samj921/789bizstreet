@@ -1,0 +1,283 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start custom code */
+
+/* Start General */
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #3D550C;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+a{
+    color: #81B622;
+    text-decoration: none;
+}
+
+h1{
+    color: #81B622;
+    font-size: 2.5em;
+}
+
+h2{
+    color: #81B622;
+    font-size: 2em;
+}
+
+h3 {
+    color: #3D550C;
+    font-size: 1.75em;
+}
+
+h4{
+    color: #3D550C;
+    font-size: 1.5em;
+}
+
+/* End General */
+
+/* Start Header */
+#logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+header nav{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav li{
+    display: inline-flex;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+.dropbtn {
+    color: #81B622;
+    background-color: white;
+    border: none;
+    font: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 300px;
+  }
+
+  .dropdown-content a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+  }
+
+.dropdown-content a:hover {background-color: white;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: white;}
+
+#hero{
+    display: grid;
+    grid-template-rows: max-content;
+    grid-template-columns: 1fr;
+    align-items: end;
+}
+
+#green-block{
+    width: 65%;
+    background-color: #81B622;
+    padding: 40px;
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 1.5em;
+}
+
+#green-block h1{
+    color: white;
+}
+
+#hero-img{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+/* End Header */
+
+/* Start Main */
+
+#homepage-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    padding: 20 px;
+    margin: 40px 100px;
+    color: #3D550C;
+    font-size: 1.5em;
+    align-items: center;
+}
+
+#homepage-1{
+    grid-column: 1/4;
+}
+
+#home-img{
+    align-self: start;
+}
+
+main ul li {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+
+/* End Main */
+
+/* Start Footer */
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #ECF87F;
+    font-size: 1em;
+    line-height: 2em;
+    padding: 20px;
+    color: #3D550C;
+}
+
+#copyright{
+    grid-column: 1/4;
+}
+
+footer li a{
+    color:  #3D550C;
+}
+
+footer img {
+    width: 50px;
+    height: auto;
+}
+
+/* End Footer */
+
+/* Start About*/
+
+#about-karen{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    padding: 30px;
+    justify-items: center;
+}
+
+#meet {
+    padding: 70px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#about-karen-img{
+    width: 400px;
+}
+
+#staff img{
+    width: 300px;
+    height: auto;
+    border-radius: 300px;
+    margin-bottom: 20px;
+}
+
+#staff{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    margin-bottom: 50px;
+    justify-items: center;
+}
+
+.staff-member{
+    text-align: center;
+
+}
+
+.staff-member h1, .staff-member h2, .staff-member h3, .staff-member h4, .staff-member p, #about-karen h1, #about-karen h2, #about-karen h3, #about-karen h4, #about-karen p{
+    padding: 10px 40px;
+}
+
+hr{
+    width: 200px;
+}
+
+/* End About */
